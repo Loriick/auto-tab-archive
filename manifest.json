@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Tab Archive",
+  "version": "2.1.0",
+  "description": "Archive automatiquement les onglets inactifs, comme Arc. Délai réglable, onglets archivés réouvrables depuis le popup.",
+  "minimum_chrome_version": "121",
+  "permissions": [
+    "alarms",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Onglets archivés",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}

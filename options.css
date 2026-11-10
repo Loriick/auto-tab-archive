@@ -1,0 +1,11 @@
+:root { --fg: #1f1f1f; --muted: #6b6b6b; --border: #e3e3e8; --accent: #5b5bd6; --bg: #ffffff; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #ececf1; --muted: #9a9aa5; --border: #34343c; --accent: #8e8ef0; --bg: #1e1e22; }
+}
+body { margin: 0; padding: 16px; min-width: 320px; font: 13px/1.5 system-ui, sans-serif; color: var(--fg); background: var(--bg); }
+fieldset { border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin: 0 0 14px; }
+legend { font-weight: 600; padding: 0 4px; }
+label { display: flex; align-items: center; gap: 8px; padding: 3px 0; cursor: pointer; }
+label.fixed { color: var(--muted); cursor: default; }
+input { accent-color: var(--accent); margin: 0; }
+#status { min-height: 1.5em; margin: 0; color: var(--muted); font-size: 12px; }

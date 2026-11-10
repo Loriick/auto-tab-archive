@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Onglets archivés</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Onglets archivés</h1>
+    <div class="actions">
+      <button id="clear" type="button" title="Vider l'archive">Tout effacer</button>
+      <button id="options" type="button" title="Réglages" aria-label="Réglages">⚙</button>
+    </div>
+  </header>
+  <input id="search" type="search" placeholder="Rechercher…" autofocus>
+  <ul id="list"></ul>
+  <p id="empty" hidden>Aucun onglet archivé.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

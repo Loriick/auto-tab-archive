@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Auto Tab Archive — Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <form id="form">
+    <fieldset>
+      <legend>Archiver les onglets inactifs depuis</legend>
+      <label><input type="radio" name="archiveAfterHours" value="12"> 12 heures</label>
+      <label><input type="radio" name="archiveAfterHours" value="24"> 24 heures</label>
+      <label><input type="radio" name="archiveAfterHours" value="168"> 7 jours</label>
+      <label><input type="radio" name="archiveAfterHours" value="720"> 30 jours</label>
+      <label id="customRow" hidden><input type="radio" name="archiveAfterHours" id="custom"> <span id="customLabel"></span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Ne jamais archiver</legend>
+      <label class="fixed"><input type="checkbox" checked disabled> Les onglets épinglés</label>
+      <label><input type="checkbox" name="keepActive"> L'onglet actif de chaque fenêtre</label>
+      <label><input type="checkbox" name="keepGrouped"> Les onglets dans un groupe</label>
+      <label><input type="checkbox" name="keepAudible"> Les onglets qui jouent du son</label>
+    </fieldset>
+
+    <p id="status" role="status"></p>
+  </form>
+  <script src="settings.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
